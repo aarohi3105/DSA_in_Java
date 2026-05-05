@@ -1,3 +1,10 @@
+/*
+Problem: Insert element in array
+Approach: Create new array and shift elements
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+
 public class array_insertion_2 {
 
         public static void insert(int pos,int number,int[] arr)
