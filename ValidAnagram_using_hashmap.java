@@ -4,6 +4,7 @@ public class ValidAnagram_using_hashmap {
     public static boolean Anagram(String s , String t){
         HashMap<Character , Integer> map1 = new HashMap<>();
         HashMap<Character , Integer> map2 = new HashMap<>();
+        if(s.length()!=t.length()) return false;
         for(int i=0;i<s.length();i++) {
             char c = s.charAt(i);
             map1.put(c, map1.getOrDefault(c, 0) + 1);
