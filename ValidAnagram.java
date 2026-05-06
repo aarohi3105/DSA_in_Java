@@ -7,15 +7,16 @@ public class ValidAnagram {
           char [] s1= s.toCharArray();
           char [] t1 = t.toCharArray();
           if(s1.length!=t1.length) return false;
-          for(int i=0;i<s1.length;i++){
-              if(s1[i]!=t1[i]) return false;
+          Arrays.sort(s1);
+          Arrays.sort(t1);
 
-          }
-          return true;
+          return Arrays.equals(s1,t1);
+
+
     }
     public static void main(String args[]){
         String s="aarohi";
-        String t="ayi";
+        String t="rohiaa";
         Boolean answer =Anagram(s,t);
         System.out.println(answer);
     }
