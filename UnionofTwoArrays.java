@@ -10,8 +10,8 @@
         }
         for (int i = 0; i < num2.length; i++) {
             boolean is_duplicate = false;
-            for (int j = 0; j < num3.length; j++) {
-                if (num2[i] == num3[j]) {
+            for (int j = 0; j < num1.length; j++) {
+                if (num2[i] == num1[j]) {
                     is_duplicate = true;
                     break;
                 }
