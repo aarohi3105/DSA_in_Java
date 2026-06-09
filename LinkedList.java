@@ -15,9 +15,12 @@ public class LinkedList {
     public  Node head;
     public  Node tail;
 
+    void addLast(int data){
+
+    }
     public static void main(String args[]) {
         LinkedList ll = new LinkedList();
         LinkedList ll1 = new LinkedList();
-
+        ll.addLast(23);
     }
 }
