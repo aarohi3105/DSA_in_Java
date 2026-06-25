@@ -1,4 +1,4 @@
-//wirte a program to find whether two numbers are same or different
+//write a program to find whether two numbers are same or different
 public class SamenoOrNot {
     public static void main(String [] args) {
         int a = 5;
