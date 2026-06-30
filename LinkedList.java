@@ -16,11 +16,29 @@ public class LinkedList {
     public  Node tail;
 
     void addLast(int data){
-
+Node newNode= new Node(data);
+if(head==null){
+    head=newNode;
+    tail=newNode;
+    return;
+}
+tail.next=newNode;
+tail=newNode;
     }
+public void display(){
+        Node tempNode=head;
+        while(tempNode!=null){
+            System.out.println(tempNode.data);
+            tempNode=tempNode.next;
+        }
+}
     public static void main(String args[]) {
         LinkedList ll = new LinkedList();
-        LinkedList ll1 = new LinkedList();
+
         ll.addLast(23);
+        ll.addLast(24);
+        ll.addLast(25);
+         ll.display();
+
     }
 }
