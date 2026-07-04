@@ -32,6 +32,27 @@ public void display(){
             tempNode=tempNode.next;
         }
 }
+
+public void deleteLast(){
+    if(head==null){
+        System.out.println("empty list");
+        return;
+    }
+    if(head.next==null){
+        head=null;
+        tail=null;
+        return;
+    }
+       Node tempNode= head;
+
+       while(tempNode.next!=tail){
+           tempNode=tempNode.next;
+       }
+       tempNode.next=null;
+      tail=tempNode ;
+
+}
+
     public static void main(String args[]) {
         LinkedList ll = new LinkedList();
 
@@ -39,6 +60,8 @@ public void display(){
         ll.addLast(24);
         ll.addLast(25);
          ll.display();
-
+        System.out.println("-------------------");
+         ll.deleteLast();
+        ll.display();
     }
 }
