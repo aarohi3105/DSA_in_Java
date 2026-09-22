@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class MaxElementRecursion {
 //    static int max=Integer.MIN_VALUE;
@@ -6,7 +7,7 @@ public class MaxElementRecursion {
 //        //base condition
 //        if(index==arr.length){
 //            return max;
-//        }                                                  NOT A RIGHT METHOD
+//        }                                                 // NOT A RIGHT METHOD
 //        if(arr[index]>max){
 //            max=arr[index];
 //        }
@@ -40,7 +41,10 @@ public class MaxElementRecursion {
     }
     public static void main(String[] args){
         int[] arr= {10,20,30,70,50};
+        int[] arr2 = {5, 6, 7};
         int max=Integer.MIN_VALUE;
+//        System.out.println(maxElement(arr,0));
+//        System.out.println(maxElement(arr2,0));
         maxElement(arr,0,max);
         int min=Integer.MAX_VALUE;
         minElement(arr,0,min);
